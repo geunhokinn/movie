@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Movie from "./components/Movie";
+import Movie from "../components/Movie";
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -28,7 +28,7 @@ function Home() {
                             key={movie.id}
                             medium_cover_image={movie.medium_cover_image}
                             title={movie.title}
-                            summany={movie.summary}
+                            summary={movie.summary}
                             genres={movie.genres}
                         />))}
                 </div>}
